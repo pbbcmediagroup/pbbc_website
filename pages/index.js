@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
-import Logobar from '../components/Logobar';
 import Container from '@material-ui/core/Container';
 import { withStyles } from '@material-ui/styles';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 import DailyVerse from '../components/DailyVerse';
 import BoxedRouter from '../components/BoxedRouter';
 import Map from '../components/Map';
+import Announcements from '../components/Announcements';
 
 const styles = (theme) => ({
     Root: {
@@ -19,6 +20,12 @@ const styles = (theme) => ({
     DV_Container: {
         padding: 20,
     },
+
+	Title_Container: {
+		color: 'white',
+		paddingTop: 200,
+		fontWeight: "fontWeightBold"
+	},
 
     Box: {
         background: 'url(/pbbc_group.jpg)',
@@ -38,14 +45,18 @@ class Home extends Component {
             <div className={classes.Root}>
                 <Navbar />
                 <div className={classes.AppbarSpacer} />
-                <Logobar />
                 <main className={classes.Root}>
-                    <Box className={classes.Box}>
-                        {/* <Container className={classes.DV_Container}> 
-                            <DailyVerse />
-                        </Container> */}
-                    </Box>
-                    <Container>
+                    <Box className={classes.Box} fontWeight="fontWeightBold">
+						<Container className={classes.Title_Container}>
+							<Typography variant="h2" align="center">
+								Philadelphia Burmese Baptist Church
+							</Typography>
+						</Container>
+					</Box>
+                   	<Box>
+						<Announcements />	
+					</Box>
+					<Container>
                         <Grid container spacing={2}>
                             <Grid item xs={6}>
                                 <BoxedRouter title="Live Stream"/>
