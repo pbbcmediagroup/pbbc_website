@@ -28,8 +28,8 @@ const styles = (theme) => ({
 	},
 
     Box: {
-        background: 'url(/pbbc_group.jpg)',
-        height: 800,
+        background: 'url(/pbbc.png)',
+        height: 600,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
     },
@@ -49,7 +49,7 @@ class Home extends Component {
                     <Box className={classes.Box} fontWeight="fontWeightBold">
 						<Container className={classes.Title_Container}>
 							<Typography variant="h2" align="center">
-								Philadelphia Burmese Baptist Church
+								
 							</Typography>
 						</Container>
 					</Box>
@@ -58,12 +58,12 @@ class Home extends Component {
 					</Box>
 					<Container>
                         <Grid container spacing={2}>
-                            <Grid item xs={6}>
+                            {/* <Grid item xs={6}>
                                 <BoxedRouter title="Live Stream"/>
                             </Grid>
                             <Grid item xs={6}>
                                 <BoxedRouter title="Donations"/>
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                     </Container>
                     <Box>

@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     Root: {
@@ -20,6 +21,12 @@ const useStyles = makeStyles((theme) => ({
 
     Box: {
         display: 'flex'
+    },
+
+    Logo: {
+        maxWidth: '150%',
+        maxHeight: '250%',
+        marginLeft: 'auto'
     }
 }));
 
@@ -46,12 +53,15 @@ function Navbar(props) {
     return (
         <div className={classes.Root}>
             <ElevationScroll {...props}>
-            <AppBar className={classes.Navbar}>
+            <AppBar className={classes.Navbar}s>
                 <Toolbar>
-                    <Button color="primary" onClick={MediaHandler}> Welcome </Button>
-                    <Button color="primary" onClick={MediaHandler}> Media </Button>
+                    <Typography variant='title'>
+                        <img src={'../pbbcLogoV2.png'} className={classes.Logo} alt='logo'/>
+                    </Typography>
+                    {/* <Button color="primary" onClick={MediaHandler}> Welcome </Button> */}
+                    {/* <Button color="primary" onClick={MediaHandler}> Media </Button>
                     <Button color="primary" onClick={MediaHandler}> Donate </Button>
-                    <Button color="primary" onClick={MediaHandler}> Contact </Button>
+                    <Button color="primary" onClick={MediaHandler}> Contact </Button> */}
                 </Toolbar>
             </AppBar>
             </ElevationScroll>

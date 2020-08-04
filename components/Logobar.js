@@ -27,7 +27,7 @@ class Logobar extends Component {
                 <AppBar className={classes.Bar}>
                     <Toolbar>
                         <Grid container justify = "center">
-                            <h1> Philadelphia Burmese Baptist Church </h1>
+                            <h1></h1>
                         </Grid>
                     </Toolbar>
                 </AppBar>
