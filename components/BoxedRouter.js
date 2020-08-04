@@ -10,8 +10,9 @@ const styles = () => ({
     },
 
     Paper: {
-        height: 150,
+        maxHeight: '5%',
         background: 'linear-gradient(180deg, rgba(4,188,255,1) 0%, rgba(97,46,170,1) 100%)',
+        maxWidght: 10,
         textAlign: 'center',
         padding: 10,
         color: 'white'

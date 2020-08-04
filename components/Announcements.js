@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 
 const styles = () => ({
 	Container: {
@@ -13,7 +14,7 @@ const styles = () => ({
 	},
 
 	Box: {
-		paddingTop: 50,
+		paddingTop: 20,
 		paddingBottom: 50
 	}
 
@@ -34,8 +35,14 @@ class Announcements extends Component {
 						
 						<Box className={classes.Box}>
 							<Typography variant="h4" color="secondary">
-								2:00PM EST
+								Live @ 2:00PM EST
 							</Typography>
+						</Box>
+
+						<Box>
+							<Button variant='outlined'>
+								View Live Streams
+							</Button>
 						</Box>
 					</Box>
 					<Divider />

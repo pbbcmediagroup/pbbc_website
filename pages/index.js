@@ -29,9 +29,9 @@ const styles = (theme) => ({
 
     Box: {
         background: 'url(/pbbc.png)',
-        height: 600,
+        height: 750,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+        backgroundSize: 'contain'
     },
 
     AppbarSpacer: theme.mixins.toolbar
@@ -57,14 +57,14 @@ class Home extends Component {
 						<Announcements />	
 					</Box>
 					<Container>
-                        <Grid container spacing={2}>
-                            {/* <Grid item xs={6}>
+                        {/* <Grid container spacing={2}>
+                            <Grid item xs={6}>
                                 <BoxedRouter title="Live Stream"/>
                             </Grid>
                             <Grid item xs={6}>
                                 <BoxedRouter title="Donations"/>
-                            </Grid> */}
-                        </Grid>
+                            </Grid>
+                        </Grid> */}
                     </Container>
                     <Box>
                         <Map />

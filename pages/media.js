@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Navbar from '../components/Navbar';
 
 class Media extends Component {
 
     render() {
         return (
-            <h1> Hello World</h1>
+            <Navbar />
         );
     }
 }
