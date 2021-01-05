@@ -57,6 +57,13 @@ function ElevationScroll(props) {
     });
 }
 
+const DonationsHandler = () => {
+    Router.push({
+        pathname: '/donations'
+    })
+}
+
+
 const MediaHandler = () => {
     Router.push({
         pathname: '/media'
@@ -85,29 +92,12 @@ function Navbar(props) {
                     </IconButton>
                     <section className={classes.RightToolbar}>
                         <Button color='primary' onClick={WelcomeHandler}> Welcome </Button> 
-                        <Button color='primary' onClick={MediaHandler}> Media </Button>
+                        {/* <Button color='primary' onClick={DonationsHandler}> Donations </Button> */}
                         <IconButton>
                             <img src={'../fbook.png'} className={classes.SmallIcons} alt='fbook' onClick={handleFacebook}/>
                         </IconButton>
                     </section>
-                    {/*<Grid justify={"space-between"} container>
-                        <Grid xs={1} item>
-                            <img src={'../pbbcLogoV2.png'} className={classes.Logo} alt='logo'/>
-                        </Grid>
-                        <Grid xs={4} item>
-                            <Grid container justify={"center"}>
-                                <Tabs aria-label="Navigation Tabs">
-                                    <Tab label={"page 1"} />
-                                    <Tab label={"page 2"} />
-                                </Tabs>
-                            </Grid>
-                        </Grid>
-                        <Grid item xs={1} />
-                    </Grid> */}
-                    {/* <Button color="primary" onClick={MediaHandler}> Welcome </Button> */}
-                    {/* <Button color="primary" onClick={MediaHandler}> Media </Button>
-                    <Button color="primary" onClick={MediaHandler}> Donate </Button>
-                    <Button color="primary" onClick={MediaHandler}> Contact </Button> */}
+
                 </Toolbar>
             </AppBar>
             </ElevationScroll>

@@ -10,11 +10,17 @@ import DailyVerse from '../components/DailyVerse';
 import BoxedRouter from '../components/BoxedRouter';
 import Map from '../components/Map';
 import Announcements from '../components/Announcements';
+import Footer from '../components/Footer';
+import PayPalDonationButton from '../components/PayPalDonationButton';
+import DonationsSection from '../components/DonationsSection';
 
 const styles = (theme) => ({
     Root: {
         backgroundColor: 'white',
         height: 2000,
+        background: 'url(/pbbc.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain'
     },
     
     DV_Container: {
@@ -28,8 +34,7 @@ const styles = (theme) => ({
 	},
 
     Box: {
-        background: 'url(/pbbc.png)',
-        height: 750,
+        height: 1000,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain'
     },
@@ -47,28 +52,20 @@ class Home extends Component {
                 <div className={classes.AppbarSpacer} />
                 <main className={classes.Root}>
                     <Box className={classes.Box} fontWeight="fontWeightBold">
-						<Container className={classes.Title_Container}>
-							<Typography variant="h2" align="center">
-								
-							</Typography>
-						</Container>
 					</Box>
                    	<Box>
 						<Announcements />	
 					</Box>
-					<Container>
-                        {/* <Grid container spacing={2}>
-                            <Grid item xs={6}>
-                                <BoxedRouter title="Live Stream"/>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <BoxedRouter title="Donations"/>
-                            </Grid>
-                        </Grid> */}
-                    </Container>
+                    <Box>
+                        <DonationsSection />
+                        {/* <Container>
+                            <PayPalDonationButton />
+                        </Container> */}
+					</Box>
                     <Box>
                         <Map />
                     </Box>
+                    <Footer />
                 </main>
             </div>
         );

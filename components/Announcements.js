@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 const styles = () => ({
 	Container: {
 		height: 500,
-		paddingTop: 25,
+		paddingTop: 50,
 		textAlign: 'center'
 	},
 
@@ -45,7 +45,6 @@ class Announcements extends Component {
 							</Button>
 						</Box>
 					</Box>
-					<Divider />
 				</Container>
 			</div>
 		);
