@@ -35,7 +35,7 @@ class DonationsSection extends Component {
                     
                     <Box className={classes.Box}>
                         <Typography variant="h6" color="secondary">
-                            Accpeting Donations through PayPal
+                            Accepting Donations through PayPal
                         </Typography>
                     </Box>
 
